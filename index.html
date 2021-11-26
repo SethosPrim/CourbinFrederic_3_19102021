@@ -10,25 +10,117 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="CSS/style.css" />
         <link rel="stylesheet" type="text/css" href="CSS/media-queries.css" />
-        <link rel="icon" type="image/png" href="images/logo/Reservia@3x.png" />
+        <link rel="icon" type="image/png" href="images/logo/ohmyfood@2x.svg" />
         <title>ohmyfood</title>
     </head>
 
     <body>
-        <header>
-            <div class="header-logo">
-                <span class="arrow"><i class="fas fa-arrow-left"></i><a href="#"></span>
-                <h1>ohmyfood</h1>
+        <header class="header">
+            <div class="header__logo">
+                <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
+            </div>
+
+            <div class="header__localisation"> 
+                <div class="header__localisation__gps"><i class="fas fa-map-marker-alt"></i></div>
+                <input class="header__localisation__ville"type="text" class="choix" placeholder="Paris, Belleville" />
+            </div>
+
+            <div class="header__presentation">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button>Explorer nos restaurants</button>
             </div>
         </header>
 
         <main>
-            <nav>
+            <section class="fonction">
+                <h2>Fonctionnement</h2>
 
-            </nav>
+                <div class="fonction__liste">
+                    <div class="fonction__liste__image">
+                        <p class="fonction__liste__image__nombre">1</p>
+                        <i class="fonction__liste__image__i  fas fa-mobile-alt"></i>
+                        <p class="fonction__liste__image__titre">Choisissez un restaurant</p>
+                    </div>
 
-            <section>
+                    <div class="fonction__liste__image">
+                        <p class="fonction__liste__image__nombre">2</p>
+                        <i class="fas fa-list"></i>
+                        <p class="fonction__liste__image__titre">Composez votre menu</p>
+                    </div>
 
+                    <div class="fonction__liste__image">
+                        <p class="fonction__liste__image__nombre">3</p>
+                        <i class="fas fa-store"></i>
+                        <p class="fonction__liste__image__titre">Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="restaurants">
+                <h2>Restaurants</h2>
+
+                <div class="restaurants__choix">
+                    <a href="la-palette-du-gout.html">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+                        <div class="restaurants__choix__nouveau">Nouveau</div>
+
+                        <div class="restaurants__choix__description">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+
+                        <div class="restaurants__choix__like">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="restaurants__choix">
+                    <a href="la-note-enchantee.html">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+                        <div class="restaurants__choix__nouveau">Nouveau</div>
+
+                        <div class="restaurants__choix__description">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+
+                        <div class="restaurants__choix__like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="restaurants__choix">
+                    <a href="a-la-francaise.html">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+
+                        <div class="restaurants__choix__description">
+                            <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+
+                        <div class="restaurants__choix__like">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="restaurants__choix">
+                    <a href="le-delice-des-sens.html">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
+
+                        <div class="restaurants__choix__description">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+
+                        <div class="restaurants__choix__like">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </div>
             </section>
         </main>
 
