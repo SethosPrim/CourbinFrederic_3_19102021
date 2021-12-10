@@ -16,43 +16,47 @@
 
     <body>
         <header class="header">
-            <div class="header__logo">
+            <div class="header__logo-page-accueil">
                 <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
             </div>
 
             <div class="header__localisation"> 
-                <div class="header__localisation__gps"><i class="fas fa-map-marker-alt"></i></div>
-                <input class="header__localisation__ville"type="text" class="choix" placeholder="Paris, Belleville" />
+                <div class="header__localisation__gps">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <input class="header__localisation__ville" type="text" class="choix" placeholder="Paris, Belleville" />
             </div>
 
-            <div class="header__presentation">
-                <h2>Réservez le menu qui vous convient</h2>
+            <div class="header__présentation">
+                <h1>Réservez le menu qui vous convient</h1>
+
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+
                 <button>Explorer nos restaurants</button>
             </div>
         </header>
 
         <main>
-            <section class="fonction">
+            <section class="fonctionnement">
                 <h2>Fonctionnement</h2>
 
-                <div class="fonction__liste">
-                    <div class="fonction__liste__image">
-                        <p class="fonction__liste__image__nombre">1</p>
-                        <i class="fonction__liste__image__i  fas fa-mobile-alt"></i>
-                        <p class="fonction__liste__image__titre">Choisissez un restaurant</p>
+                <div class="fonctionnement__choix">
+                    <div class="fonctionnement__choix__clique">
+                        <p class="fonctionnement__choix__clique__nombre">1</p>
+                        <i class="fonctionnement__choix__clique__i  fas fa-mobile-alt"></i>
+                        <p class="fonctionnement__choix__clique__titre">Choisissez un restaurant</p>
                     </div>
 
-                    <div class="fonction__liste__image">
-                        <p class="fonction__liste__image__nombre">2</p>
+                    <div class="fonctionnement__choix__clique">
+                        <p class="fonctionnement__choix__clique__nombre">2</p>
                         <i class="fas fa-list"></i>
-                        <p class="fonction__liste__image__titre">Composez votre menu</p>
+                        <p class="fonctionnement__choix__clique__titre">Composez votre menu</p>
                     </div>
 
-                    <div class="fonction__liste__image">
-                        <p class="fonction__liste__image__nombre">3</p>
+                    <div class="fonctionnement__choix__clique">
+                        <p class="fonctionnement__choix__clique__nombre">3</p>
                         <i class="fas fa-store"></i>
-                        <p class="fonction__liste__image__titre">Dégustez au restaurant</p>
+                        <p class="fonctionnement__choix__clique__titre">Dégustez au restaurant</p>
                     </div>
                 </div>
             </section>
@@ -63,15 +67,18 @@
                 <div class="restaurants__choix">
                     <a href="la-palette-du-gout.html">
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+
                         <div class="restaurants__choix__nouveau">Nouveau</div>
 
-                        <div class="restaurants__choix__description">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
+                        <div class="restaurants__choix__texte">
+                            <div class="restaurants__choix__texte__description">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
 
-                        <div class="restaurants__choix__like">
-                            <i class="far fa-heart"></i>
+                            <div class="restaurants__choix__texte__like">
+                                <i class="far fa-heart"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -79,15 +86,18 @@
                 <div class="restaurants__choix">
                     <a href="la-note-enchantee.html">
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+
                         <div class="restaurants__choix__nouveau">Nouveau</div>
 
-                        <div class="restaurants__choix__description">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
+                        <div class="restaurants__choix__texte">    
+                            <div class="restaurants__choix__texte__description">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
 
-                        <div class="restaurants__choix__like">
-                            <i class="fas fa-heart"></i>
+                            <div class="restaurants__choix__texte__like">
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -96,13 +106,15 @@
                     <a href="a-la-francaise.html">
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
 
-                        <div class="restaurants__choix__description">
-                            <h3>A la française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
+                        <div class="restaurants__choix__texte">
+                            <div class="restaurants__choix__texte__description">
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
 
-                        <div class="restaurants__choix__like">
-                            <i class="far fa-heart"></i>
+                            <div class="restaurants__choix__texte__like">
+                                <i class="far fa-heart"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -111,13 +123,15 @@
                     <a href="le-delice-des-sens.html">
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
 
-                        <div class="restaurants__choix__description">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
+                        <div class="restaurants__choix__texte">
+                            <div class="restaurants__choix__texte__description">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
 
-                        <div class="restaurants__choix__like">
-                            <i class="far fa-heart"></i>
+                            <div class="restaurants__choix__texte__like">
+                                <i class="far fa-heart"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -137,3 +151,4 @@
             </div>
         </footer>
     </body>
+</html>
