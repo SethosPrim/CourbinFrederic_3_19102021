@@ -1,0 +1,44 @@
+.fonctionnement
+{
+    text-align: center;
+    margin: auto;
+    padding: 30px 0 20px 0;
+    h2{
+        margin: auto;
+    }
+    &__choix{
+        margin: 0px 15px;
+        padding-top: 20px; 
+        &__image{
+            display: flex;
+            background-color: var(--greycolor);
+            width: 100%;
+            align-items: center;
+            border: 2px var(--greycolor) solid;
+            border-radius: 20px;
+            box-shadow: 1px 2px 3px 2px var(--darkgreycolor);
+            margin-bottom: 30px;
+            cursor: pointer;
+            i{
+                font-size: 20px;
+                color: var(--darkgreycolor);
+                margin: auto 30px;
+            }
+            &__nombre{
+                background-color: var(--pinkcolor);
+                color: var(--whitecolor);
+                width: 10px;
+                height: 10px;
+                line-height: 0.5;
+                border-radius: 25px;
+                margin-left: -15px;
+                padding: 10px;
+            } 
+            &__titre{
+                font-size: 16px;
+                font-weight: bold;
+                padding-right: 45px;
+            }  
+        }
+    }
+}
