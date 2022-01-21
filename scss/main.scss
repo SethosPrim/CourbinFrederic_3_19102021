@@ -1,3 +1,10 @@
-@import "base/base.scss";
-@import "components/color.scss";
-@import "layouts/fonctionnement.scss";
+@import "utiles/_color";
+@import "utiles/_variables";
+@import "utiles/_mixins";
+@import "utiles/_maps";
+@import "base/base";
+@import "components/heart";
+@import "components/pink-button";
+@import "layouts/fonctionnement";
+@import "layouts/footer";
+@import "layouts/header";

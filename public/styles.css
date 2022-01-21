@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Pour meilleur contraste redcolor #bd1d1d; */
+/* #E5E5E5 */
+/* #B1B1B14B */
+/* #CFCFCF */
 html {
   font-family: roboto, sans-serif;
 }
@@ -16,16 +21,6 @@ h3, p {
 
 h3 {
   font-weight: bolder;
-}
-
-:root {
-  --pinkcolor: #FF79DA;
-  --magentacolor: #9356DC;
-  --greencolor: #99E2D0;
-  --greycolor: #F2F2F2;
-  /* Pour meilleur contraste redcolor #bd1d1d; */
-  --darkgreycolor: #B1B1B14B;
-  --whitecolor: white;
 }
 
 .fonctionnement {
@@ -70,6 +65,35 @@ h3 {
   font-size: 16px;
   font-weight: bold;
   padding-right: 45px;
+}
+
+.header {
+  text-align: center;
+}
+.header__logo-page-accueil img {
+  width: 50%;
+  margin: 1em;
+}
+.header__localisation {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#c9c9c9 0%, #F2F2F2 12%);
+  height: 3.5em;
+}
+.header__localisation__gps {
+  line-height: 2.9;
+  font-size: 20px;
+  width: 2em;
+  margin-left: 7%;
+  padding-right: 1%;
+}
+.header__localisation__ville {
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(#c9c9c9 0%, #F2F2F2 12%);
+}
+.header__présentation {
+  background-color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */

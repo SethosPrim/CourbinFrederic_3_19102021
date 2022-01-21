@@ -1,0 +1,29 @@
+.header{
+    text-align: center;
+    &__logo-page-accueil img{
+        width: 50%;
+        margin: 1em;
+    }
+    &__localisation{
+        display: flex;
+        justify-content: center;
+        background: $color-banniere;
+        height: 3.5em;
+        &__gps{
+            line-height: 2.9;
+            font-size: 20px;
+            width: 2em;
+            margin-left: 7%;
+            padding-right: 1%;
+        }
+        &__ville{
+            font-size: 20px;
+            border: none;
+            background: $color-banniere;
+        }
+    
+    }
+    &__présentation{
+        background-color: red;
+    }
+}
