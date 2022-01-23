@@ -1,0 +1,28 @@
+footer{
+    background-color: $color-footer;
+    color: $color-five;
+    padding-top: 0.2em;
+    padding-bottom: 0.7em;
+}
+
+.footer{
+    width: 90%;
+    margin: 1em auto;
+    & h3{
+        font-family: shrikhand;
+    }
+    &__nav-footer{
+        & i{
+            width: 28px;
+        }
+        & .handshakes{
+            font-size: 0.813em;
+            width: 29px;
+            margin-left: -1px;
+        }
+        & a{
+            text-decoration: none;
+            color: $color-five;
+        }
+    }
+}

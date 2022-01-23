@@ -2,28 +2,52 @@
     text-align: center;
     &__logo-page-accueil img{
         width: 50%;
-        margin: 1em;
+        margin: 3em 1em 1.5em 1em;
     }
     &__localisation{
         display: flex;
         justify-content: center;
         background: $color-banniere;
         height: 3.5em;
-        &__gps{
+        &--gps{
             line-height: 2.9;
-            font-size: 20px;
+            font-size: 1.25em;
             width: 2em;
             margin-left: 7%;
             padding-right: 1%;
         }
-        &__ville{
-            font-size: 20px;
+        &--ville{
+            font-size: 1.25em;
             border: none;
             background: $color-banniere;
         }
-    
     }
     &__présentation{
-        background-color: red;
+        background-color: $color-six;
+        padding-top: 2em;
+        padding-bottom: 3.75em;
+        & h1, p{
+            font-family: roboto, sans-serif;
+            font-size: 1.25em;
+            width: 90%;
+            margin: 0.5em auto;
+        }
+        & h1{
+            font-size: 1.876em;
+            width: 80%;
+        }
+        & button{
+            font-size: 1em;
+            font-weight: bold;
+            line-height: 1.5;
+            color: $color-five;
+            background: $color-button;
+            box-shadow: 0 5px 5px $color-eight;
+            border-radius: 2.5em;
+            border: none;
+            margin-top: 1.4em;
+            padding: 1.2em 1.4em;
+            cursor: pointer;
+        }
     }
 }
