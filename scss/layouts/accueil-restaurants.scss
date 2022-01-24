@@ -20,7 +20,7 @@
             position: absolute;
             width: 20%;
             background-color: $color-tertiary;
-            color: $color-four;
+            color: darken($color: $color-tertiary, $amount: 40%);
             text-align: center;
             left: 70%;
             border-radius: 0.125em;
@@ -38,9 +38,22 @@
             display: flex;
             justify-content: space-between;
             &--description{
-                margin: 0.938em;
+                margin: 0.688em 0.938em;
                 & h3, p{
                     margin: 0;
+                    padding-bottom: 0.25em;
+                }
+            }
+            &--like{
+                position: relative;
+                font-size: 1.375em;
+                color: lighten($color: $color-nine, $amount: 45%);
+                top: 0.813em;
+                right: 1.25em;
+                &:hover{
+                    & i{
+                        color: $color-secondary;
+                    }
                 }
             }
         }

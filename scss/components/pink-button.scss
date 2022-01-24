@@ -1,0 +1,13 @@
+button{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $color-five;
+    background: $color-button;
+    box-shadow: 0 5px 5px $color-eight;
+    border-radius: 2.5em;
+    border: none;
+    margin-top: 1.4em;
+    padding: 1.2em 1.4em;
+    cursor: pointer;
+}

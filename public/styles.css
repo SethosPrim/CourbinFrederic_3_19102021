@@ -20,6 +20,20 @@ h3 {
   font-weight: bolder;
 }
 
+button {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  box-shadow: 0 5px 5px #c9c9c9;
+  border-radius: 2.5em;
+  border: none;
+  margin-top: 1.4em;
+  padding: 1.2em 1.4em;
+  cursor: pointer;
+}
+
 .fonctionnement {
   text-align: center;
   margin: 3em auto;
@@ -95,7 +109,7 @@ h3 {
   position: absolute;
   width: 20%;
   background-color: #99E2D0;
-  color: linear-gradient(#99E2D0 10%);
+  color: #278870;
   text-align: center;
   left: 70%;
   border-radius: 0.125em;
@@ -114,10 +128,21 @@ h3 {
   justify-content: space-between;
 }
 .restaurants__choix__texte--description {
-  margin: 0.938em;
+  margin: 0.688em 0.938em;
 }
 .restaurants__choix__texte--description h3, .restaurants__choix__texte--description p {
   margin: 0;
+  padding-bottom: 0.25em;
+}
+.restaurants__choix__texte--like {
+  position: relative;
+  font-size: 1.375em;
+  color: #737373;
+  top: 0.813em;
+  right: 1.25em;
+}
+.restaurants__choix__texte--like:hover i {
+  color: #9356DC;
 }
 
 footer {
@@ -186,19 +211,6 @@ footer {
 .header__présentation h1 {
   font-size: 1.876em;
   width: 80%;
-}
-.header__présentation button {
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 1.5;
-  color: white;
-  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
-  box-shadow: 0 5px 5px #c9c9c9;
-  border-radius: 2.5em;
-  border: none;
-  margin-top: 1.4em;
-  padding: 1.2em 1.4em;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
