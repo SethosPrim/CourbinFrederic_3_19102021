@@ -38,3 +38,25 @@
         }
     }
 }
+
+.headers{
+    display: flex;
+    &__icon{
+        font-size: 1.375em;
+        line-height: 3em;
+        margin-left: 7%;
+        margin-right: -10%;
+        & i{
+            color: $color-nine;
+        }
+    }
+    &__logo-page-restaurants{
+        display: flex;
+        justify-content: center;
+        width: 68%;
+        margin: auto;
+        & img{
+            width: 70%;
+        }
+    }
+}
