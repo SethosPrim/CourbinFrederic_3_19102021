@@ -27,3 +27,17 @@
         margin-left: -1.5em;
     }
 }
+
+.menu{
+    width: 85%;
+    margin: auto;
+    &__entrée{
+        & h2{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        &__clique{
+            @include choice;
+        }
+    }
+}

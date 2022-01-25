@@ -173,6 +173,25 @@ button {
   margin-left: -1.5em;
 }
 
+.menu {
+  width: 85%;
+  margin: auto;
+}
+.menu__entrée h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.menu__entrée__clique {
+  background: #FF79DA;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 1px 3px red;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+  width: 100%;
+}
+
 footer {
   background-color: #353535;
   color: white;

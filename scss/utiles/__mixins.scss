@@ -1,3 +1,14 @@
 // definitions des madias
 
 // definitions d'autres
+
+@mixin choice {
+    background: $color-primary;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 1px 3px red;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5px;
+    width: 100%;
+}
