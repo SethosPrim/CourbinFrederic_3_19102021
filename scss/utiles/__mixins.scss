@@ -2,13 +2,29 @@
 
 // definitions d'autres
 
+@mixin box-shadow-primary {
+    box-shadow: 0 5px 5px $color-seven;
+}
+
+@mixin box-shadow-secondary {
+    box-shadow: 0 5px 5px $color-eight;
+}
+
 @mixin choice {
-    background: $color-primary;
-    border-radius: 30px;
-    padding: 10px;
-    box-shadow: 1px 3px red;
     display: flex;
     justify-content: space-between;
-    margin-left: -5px;
-    width: 100%;
+    background: $color-five;
+    @include box-shadow-secondary;
+    border-radius: 15px;
+    margin: 15px -5px;
+    padding: 5px;
+    & h3, p{
+        margin: 5px;
+    }
+}
+
+@mixin span-price {
+    position: relative;
+    font-weight: bold;
+    top: 57%;
 }

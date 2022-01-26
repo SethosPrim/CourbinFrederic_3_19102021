@@ -1,3 +1,7 @@
+.backgr-rest{
+    background: $color-six;
+}
+
 .photo-entête{
     & img{
         object-fit: cover;
@@ -10,7 +14,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    background: $color-five;
+    background: $color-six;
     border-top-right-radius: 2.188em;
     border-top-left-radius: 2.188em;
     margin-top: -2.188em;
@@ -29,15 +33,32 @@
 }
 
 .menu{
-    width: 85%;
+    width: 90%;
     margin: auto;
     &__entrée{
         & h2{
             font-size: 20px;
             font-weight: lighter;
         }
-        &__clique{
-            @include choice;
+    }
+    &__clique{
+        @include choice;
+        &--titre{
+            width: 85%
         }
+        &--prix{
+            @include span-price;
+        }
+    }
+}
+
+.commander{
+    text-align: center;
+    padding: 20px 0 85px 0;
+    background: rebeccapurple;
+    margin: auto;
+    & button{
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }

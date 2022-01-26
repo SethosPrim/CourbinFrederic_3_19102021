@@ -4,7 +4,7 @@ button{
     line-height: 1.5;
     color: $color-five;
     background: $color-button;
-    box-shadow: 0 5px 5px $color-eight;
+    @include box-shadow-secondary;
     border-radius: 2.5em;
     border: none;
     margin-top: 1.4em;

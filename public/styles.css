@@ -96,6 +96,7 @@ button {
 .restaurants__choix {
   width: 90%;
   background: white;
+  box-shadow: 0 5px 5px #E8E8E8;
   border-radius: 0.938em;
   margin: 1em auto;
 }
@@ -145,6 +146,10 @@ button {
   color: #9356DC;
 }
 
+.backgr-rest {
+  background: #f6f6f6;
+}
+
 .photo-entête img {
   object-fit: cover;
   width: 100%;
@@ -155,7 +160,7 @@ button {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background: white;
+  background: #f6f6f6;
   border-top-right-radius: 2.188em;
   border-top-left-radius: 2.188em;
   margin-top: -2.188em;
@@ -174,22 +179,43 @@ button {
 }
 
 .menu {
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 .menu__entrée h2 {
   font-size: 20px;
   font-weight: lighter;
 }
-.menu__entrée__clique {
-  background: #FF79DA;
-  border-radius: 30px;
-  padding: 10px;
-  box-shadow: 1px 3px red;
+.menu__clique {
   display: flex;
   justify-content: space-between;
-  margin-left: -5px;
-  width: 100%;
+  background: white;
+  box-shadow: 0 5px 5px #c9c9c9;
+  border-radius: 15px;
+  margin: 15px -5px;
+  padding: 5px;
+}
+.menu__clique h3, .menu__clique p {
+  margin: 5px;
+}
+.menu__clique--titre {
+  width: 85%;
+}
+.menu__clique--prix {
+  position: relative;
+  font-weight: bold;
+  top: 57%;
+}
+
+.commander {
+  text-align: center;
+  padding: 20px 0 85px 0;
+  background: rebeccapurple;
+  margin: auto;
+}
+.commander button {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 footer {
