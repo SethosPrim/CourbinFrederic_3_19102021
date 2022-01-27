@@ -14,10 +14,30 @@ body {
 
 h1 {
   font-family: shrikhand;
+  font-size: 1.375em;
 }
 
 h3 {
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+.restaurants__choix__texte--like {
+  position: relative;
+  font-size: 1.375em;
+  color: #737373;
+  top: 0.813em;
+  right: 1.25em;
+}
+.restaurants__choix__texte--like:hover i {
+  color: #9356DC;
+}
+
+.restaurant--like {
+  font-size: 1.75em;
+  line-height: 3.3em;
+  color: #737373;
+  margin-right: 1.5em;
+  margin-left: -1.5em;
 }
 
 button {
@@ -26,7 +46,7 @@ button {
   line-height: 1.5;
   color: white;
   background: linear-gradient(#FF79DA 0%, #9356DC 100%);
-  box-shadow: 0 5px 5px #c9c9c9;
+  box-shadow: 0 0.313em 0.313em #c9c9c9;
   border-radius: 2.5em;
   border: none;
   margin-top: 1.4em;
@@ -54,7 +74,7 @@ button {
   height: 5em;
   align-items: center;
   border-radius: 1.25em;
-  box-shadow: 0 5px 5px #E8E8E8;
+  box-shadow: 0 0.313em 0.313em #E8E8E8;
   margin: 2em auto;
   cursor: pointer;
 }
@@ -96,7 +116,7 @@ button {
 .restaurants__choix {
   width: 90%;
   background: white;
-  box-shadow: 0 5px 5px #E8E8E8;
+  box-shadow: 0 0.313em 0.313em #E8E8E8;
   border-radius: 0.938em;
   margin: 1em auto;
 }
@@ -135,16 +155,6 @@ button {
   margin: 0;
   padding-bottom: 0.25em;
 }
-.restaurants__choix__texte--like {
-  position: relative;
-  font-size: 1.375em;
-  color: #737373;
-  top: 0.813em;
-  right: 1.25em;
-}
-.restaurants__choix__texte--like:hover i {
-  color: #9356DC;
-}
 
 .backgr-rest {
   background: #f6f6f6;
@@ -164,58 +174,59 @@ button {
   border-top-right-radius: 2.188em;
   border-top-left-radius: 2.188em;
   margin-top: -2.188em;
+  margin-bottom: -2.188em;
 }
 .restaurant--titre {
   font-size: 1.375em;
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
 }
-.restaurant--like {
-  font-size: 1.75em;
-  line-height: 3.75em;
-  color: #737373;
-  margin-right: 1.5em;
-  margin-left: -1.5em;
+.restaurant--titre h1 {
+  margin-bottom: 0;
 }
 
 .menu {
   width: 90%;
   margin: auto;
 }
-.menu__entrée h2 {
-  font-size: 20px;
+.menu h2 {
+  font-size: 1.25em;
   font-weight: lighter;
+  width: 2.5em;
+  border-bottom: 0.2em solid #99E2D0;
+  margin-top: 2em;
+  padding-bottom: 0.25em;
 }
 .menu__clique {
   display: flex;
   justify-content: space-between;
   background: white;
-  box-shadow: 0 5px 5px #c9c9c9;
-  border-radius: 15px;
-  margin: 15px -5px;
-  padding: 5px;
+  box-shadow: 0 0.313em 0.313em #c9c9c9;
+  border-radius: 0.938em;
+  margin: 0.938em -0.313em;
+  padding: 0.313em;
 }
 .menu__clique h3, .menu__clique p {
-  margin: 5px;
+  margin: 0.28em;
 }
 .menu__clique--titre {
   width: 85%;
 }
 .menu__clique--prix {
+  top: 2.063em;
   position: relative;
   font-weight: bold;
-  top: 57%;
 }
 
 .commander {
   text-align: center;
-  padding: 20px 0 85px 0;
-  background: rebeccapurple;
+  padding: 1.25em 0 5.313em 0;
+  background: #f6f6f6;
   margin: auto;
 }
 .commander button {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 3.75em;
+  padding-right: 3.75em;
 }
 
 footer {

@@ -3,11 +3,11 @@
 // definitions d'autres
 
 @mixin box-shadow-primary {
-    box-shadow: 0 5px 5px $color-seven;
+    box-shadow: 0 0.313em 0.313em $color-seven;
 }
 
 @mixin box-shadow-secondary {
-    box-shadow: 0 5px 5px $color-eight;
+    box-shadow: 0 0.313em 0.313em $color-eight;
 }
 
 @mixin choice {
@@ -15,16 +15,15 @@
     justify-content: space-between;
     background: $color-five;
     @include box-shadow-secondary;
-    border-radius: 15px;
-    margin: 15px -5px;
-    padding: 5px;
+    border-radius: 0.938em;
+    margin: 0.938em -0.313em;
+    padding: 0.313em;
     & h3, p{
-        margin: 5px;
+        margin: 0.28em;
     }
 }
 
 @mixin span-price {
     position: relative;
     font-weight: bold;
-    top: 57%;
 }
