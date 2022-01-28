@@ -7,9 +7,20 @@ html {
   font-family: roboto, sans-serif;
   margin: 0;
 }
+@media screen and (min-width: 1024px) {
+  html {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Restaurant_La_M%C3%A8re_Brazier_%28Lyon%29_-_entr%C3%A9e_du_restaurant.jpg");
+  }
+}
 
 body {
   margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+    max-width: 1000px;
+  }
 }
 
 h1 {
@@ -64,9 +75,21 @@ button {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 .fonctionnement__choix {
   width: 90%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__choix {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .fonctionnement__choix__clique {
   display: flex;
@@ -77,6 +100,11 @@ button {
   box-shadow: 0 0.313em 0.313em #E8E8E8;
   margin: 2em auto;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__choix__clique {
+    width: 45%;
+  }
 }
 .fonctionnement__choix__clique--nombre {
   background-color: #9356DC;
@@ -101,6 +129,11 @@ button {
 .fonctionnement__choix__clique:hover {
   background-color: #9356DC21;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement__choix__clique:hover {
+    box-shadow: 0 0.313em 0.313em #e4d5f6;
+  }
+}
 .fonctionnement__choix__clique:hover i {
   color: #9356DC;
 }
@@ -109,9 +142,26 @@ button {
   background: #f6f6f6;
   padding: 3.125em 0;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f6f630;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
 .restaurants h2 {
   width: 90%;
   margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
 }
 .restaurants__choix {
   width: 90%;
@@ -119,6 +169,11 @@ button {
   box-shadow: 0 0.313em 0.313em #E8E8E8;
   border-radius: 0.938em;
   margin: 1em auto;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__choix {
+    width: 45%;
+  }
 }
 .restaurants__choix a {
   text-decoration: none;
@@ -136,6 +191,14 @@ button {
   border-radius: 0.125em;
   margin-top: 3%;
   padding: 0.313em;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__choix--nouveau {
+    width: 8%;
+    left: initial;
+    margin-top: 2%;
+    margin-left: 255px;
+  }
 }
 .restaurants__choix img {
   width: 100%;
@@ -235,13 +298,29 @@ footer {
   padding-top: 0.2em;
   padding-bottom: 0.7em;
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    background-color: #35353585;
+  }
+}
 
 .footer {
   width: 90%;
   margin: 1em auto;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    text-align: center;
+    color: #9356DC;
+  }
+}
 .footer h3 {
   font-family: shrikhand;
+}
+@media screen and (min-width: 1024px) {
+  .footer__nav-footer p {
+    color: #FF79DA;
+  }
 }
 .footer__nav-footer i {
   width: 28px;
@@ -254,6 +333,11 @@ footer {
 .footer__nav-footer a {
   text-decoration: none;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .footer__nav-footer a {
+    color: #9356DC;
+  }
 }
 
 .header {
@@ -268,6 +352,12 @@ footer {
   justify-content: center;
   background: linear-gradient(#c9c9c9 0%, #E8E8E8 12%);
   height: 3.5em;
+}
+@media screen and (min-width: 1024px) {
+  .header__localisation {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
 }
 .header__localisation--gps {
   line-height: 2.9;
@@ -285,6 +375,11 @@ footer {
   background-color: #f6f6f6;
   padding-top: 2em;
   padding-bottom: 3.75em;
+}
+@media screen and (min-width: 1024px) {
+  .header__présentation {
+    background-color: #f6f6f630;
+  }
 }
 .header__présentation h1, .header__présentation p {
   font-family: roboto, sans-serif;

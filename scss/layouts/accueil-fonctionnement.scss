@@ -7,10 +7,18 @@
         text-align: left;
         width: 90%;
         margin: auto;
+        @include desktop{
+            font-size: 28px;
+            text-align: center;
+        }
     }
     &__choix{
         width: 90%;
         margin: 0 auto;
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+        }
         &__clique{
             display: flex;
             background: $color-six;
@@ -20,6 +28,9 @@
             @include box-shadow-primary;
             margin: 2em auto;
             cursor: pointer;
+            @include desktop{
+                width: 45%;
+            }
             &--nombre{
                 background-color: $color-secondary;
                 color: $color-five;
@@ -42,6 +53,9 @@
             }
             &:hover{
                 background-color: $color-hover;
+                @include desktop{
+                    box-shadow: 0 0.313em 0.313em lighten($color: $color-secondary, $amount: 30%);
+                }
                 & i{
                     color: $color-secondary;
                 }

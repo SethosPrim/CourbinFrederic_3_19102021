@@ -9,6 +9,10 @@
         justify-content: center;
         background: $color-banniere;
         height: 3.5em;
+        @include desktop{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
         &--gps{
             line-height: 2.9;
             font-size: 1.25em;
@@ -26,6 +30,9 @@
         background-color: $color-six;
         padding-top: 2em;
         padding-bottom: 3.75em;
+        @include desktop{
+            background-color: $back-color-desk-prim;
+        }
         & h1, p{
             font-family: roboto, sans-serif;
             font-size: 1.25em;

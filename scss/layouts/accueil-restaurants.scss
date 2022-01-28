@@ -1,9 +1,22 @@
 .restaurants{
     background: $color-six;
     padding: 3.125em 0;
+    @include desktop{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $back-color-desk-prim;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
     & h2{
         width: 90%;
         margin: auto;
+        @include desktop{
+            font-size: 28px;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
     }
     &__choix{
         width: 90%;
@@ -11,6 +24,9 @@
         @include box-shadow-primary;
         border-radius: 0.938em;
         margin: 1em auto;
+        @include desktop{
+            width: 45%;
+        }
         & a{
             text-decoration: none;
             color: $color-nine;
@@ -27,6 +43,12 @@
             border-radius: 0.125em;
             margin-top: 3%;
             padding: 0.313em;
+            @include desktop{
+                width: 8%;
+                left: initial;
+                margin-top: 2%;
+                margin-left: 255px;
+            }
         }
         & img{
             width: 100%;
