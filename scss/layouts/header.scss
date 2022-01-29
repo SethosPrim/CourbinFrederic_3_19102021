@@ -3,6 +3,12 @@
     &__logo-page-accueil img{
         width: 50%;
         margin: 3em 1em 1.5em 1em;
+        @include tablet{
+            width: 40%;
+        }
+        @include desktop{
+            width: 25%;
+        }
     }
     &__localisation{
         display: flex;
@@ -10,8 +16,11 @@
         background: $color-banniere;
         height: 3.5em;
         @include tablet{
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-top-left-radius: 1.875em;
+            border-top-right-radius: 1.875em;
+        }
+        @include desktop{
+            border-radius: initial;
         }
         &--gps{
             line-height: 2.9;

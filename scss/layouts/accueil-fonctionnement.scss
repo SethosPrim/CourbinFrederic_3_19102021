@@ -30,6 +30,9 @@
             @include tablet{
                 width: 45%;
             }
+            @include desktop{
+                width: 30%;
+            }
             &--nombre{
                 background-color: $color-secondary;
                 color: $color-five;
@@ -45,6 +48,10 @@
                 width: 1.25em;
                 color: $color-item;
                 margin: auto 1.5em;
+                @include desktop{
+                    margin-left: 4%;
+                    margin-right: 4%;
+                }
             }
             &--titre{
                 font-size: 1.125em;

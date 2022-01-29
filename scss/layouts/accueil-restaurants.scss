@@ -4,10 +4,13 @@
     @include tablet{
         display: flex;
         flex-wrap: wrap;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+        border-top-left-radius: 1.875em;
+        border-top-right-radius: 1.875em;
+        padding-left: 0.938em;
+        padding-right: 0.938em;
+        @include desktop{
+            border-radius: initial;
+        }
     }
     & h2{
         font-size: 1.625em;
@@ -27,6 +30,9 @@
         margin: 1em auto;
         @include tablet{
             width: 45%;
+        }
+        @include desktop{
+            width: 23%;
         }
         & a{
             text-decoration: none;
@@ -48,7 +54,13 @@
                 width: 8%;
                 left: initial;
                 margin-top: 2%;
-                margin-left: 255px;
+                margin-left: 32.5%;
+            }
+            @include desktop{
+                width: 8%;
+                left: initial;
+                margin-top: 1.5%;
+                margin-left: 12%;
             }
         }
         & img{
