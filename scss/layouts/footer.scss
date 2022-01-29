@@ -3,27 +3,21 @@ footer{
     color: $color-five;
     padding-top: 0.2em;
     padding-bottom: 0.7em;
-    @include desktop{
-        background-color: $back-color-desk-sec;
-    }
 }
 
 .footer{
     width: 90%;
     margin: 1em auto;
+    @include tablet{
+        text-align: center;
+    }
     @include desktop{
         text-align: center;
-        color: $color-secondary;
     }
     & h3{
         font-family: shrikhand;
     }
     &__nav-footer{
-        & p{
-            @include desktop{
-                color: $color-primary;
-            }
-        }
         & i{
             width: 28px;
         }
@@ -35,9 +29,6 @@ footer{
         & a{
             text-decoration: none;
             color: $color-five;
-            @include desktop{
-                color: $color-secondary;
-            }
         }
     }
 }

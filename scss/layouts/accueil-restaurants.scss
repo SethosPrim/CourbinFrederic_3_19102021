@@ -1,18 +1,19 @@
 .restaurants{
     background: $color-six;
     padding: 3.125em 0;
-    @include desktop{
+    @include tablet{
         display: flex;
         flex-wrap: wrap;
-        background-color: $back-color-desk-prim;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     & h2{
+        font-size: 1.625em;
         width: 90%;
         margin: auto;
-        @include desktop{
-            font-size: 28px;
+        @include tablet{
             text-align: center;
             margin-top: -15px;
             margin-bottom: 15px;
@@ -24,7 +25,7 @@
         @include box-shadow-primary;
         border-radius: 0.938em;
         margin: 1em auto;
-        @include desktop{
+        @include tablet{
             width: 45%;
         }
         & a{
@@ -43,7 +44,7 @@
             border-radius: 0.125em;
             margin-top: 3%;
             padding: 0.313em;
-            @include desktop{
+            @include tablet{
                 width: 8%;
                 left: initial;
                 margin-top: 2%;
