@@ -32,6 +32,27 @@
 .menu{
     width: 90%;
     margin: auto;
+    @include desktop{
+        display: flex;
+    }
+    &__entrée{
+        @include desktop{
+            width: 30%;
+            margin: auto;
+        }
+    }
+    &__plat{
+        @include desktop{
+            width: 30%;
+            margin: auto;
+        }
+    }
+    &__dessert{
+        @include desktop{
+            width: 30%;
+            margin: auto;
+        }
+    }
     & h2{
         font-size: 1.25em;
         font-weight: lighter;
@@ -43,11 +64,19 @@
     &__clique{
         @include choice;
         &--titre{
-            width: 85%
+            width: 82%;
         }
         &--prix{
-            top: 2.063em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             @include span-price;
+        }
+        &--animation{
+            & i{
+                position: absolute;
+                margin-left: 5px;
+            }
         }
     }
 }

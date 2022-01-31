@@ -59,6 +59,10 @@
         line-height: 3em;
         margin-left: 7%;
         margin-right: -10%;
+        @include desktop{
+            font-size: 30px;
+            line-height: 4em;
+        }
         & i{
             color: $color-nine;
         }
@@ -70,6 +74,10 @@
         margin: auto;
         & img{
             width: 70%;
+            @include desktop{
+                width: 35%;
+                margin: 20px auto;
+            }
         }
     }
 }
