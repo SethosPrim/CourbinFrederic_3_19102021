@@ -24,8 +24,6 @@
 
 @mixin choice {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     background: $color-five;
     @include box-shadow-secondary;
     border-radius: 0.938em;
@@ -48,5 +46,4 @@
 @mixin span-price {
     position: relative;
     font-weight: bold;
-    margin-right: -18%;
 }

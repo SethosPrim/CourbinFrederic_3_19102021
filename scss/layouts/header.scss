@@ -59,6 +59,10 @@
         line-height: 3em;
         margin-left: 7%;
         margin-right: -10%;
+        @include tablet{
+            font-size: 25px;
+            line-height: 4em;
+        }
         @include desktop{
             font-size: 30px;
             line-height: 4em;
@@ -74,6 +78,10 @@
         margin: auto;
         & img{
             width: 70%;
+            @include tablet{
+                width: 45%;
+                margin: 20px auto;
+            }
             @include desktop{
                 width: 35%;
                 margin: 20px auto;
