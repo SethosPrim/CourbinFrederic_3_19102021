@@ -1,0 +1,59 @@
+.like{
+    &:hover{
+        cursor: pointer;
+        .like--off{
+          opacity: 0;
+        }
+        .like--on{
+          transform: scale(1);
+        }
+    }
+    &-accueil{
+        position: relative;
+        font-size: 25px;
+        width: 25px;
+        height: 29px;
+        color: lighten($color: $color-nine, $amount: 45%);
+        top: 16px;
+        right: 24px;
+        & .like--off{
+            background: white;
+        }
+    }
+    &-menu{
+        position: relative;
+        font-size: 1.563em;
+        width: 1em;
+        height: 1em;
+        color: lighten($color: $color-nine, $amount: 45%);
+        top: 18px;
+        right: 12px;
+        margin-right: 1em;
+        margin-left: -1.3em;
+        @include tablet{
+            margin-left: -1.25em;
+        }
+        @include desktop{
+            margin-left: none;
+        }
+    }
+    &--off{
+        position: absolute;
+        z-index: 1;
+        background: $color-six;
+        &-menu{
+            @include place-heart;
+        }
+    }
+    &--on{
+        position: absolute;
+        background: $color-button;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(.92);
+        transition: transform .1s calc(#{500ms} - 200ms);
+        &-menu{
+            @include place-heart;
+        }
+    }
+}

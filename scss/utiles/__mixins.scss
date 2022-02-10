@@ -47,3 +47,8 @@
     position: relative;
     font-weight: bold;
 }
+
+@mixin place-heart {
+    top: 8px;
+    left: 8px;
+}
