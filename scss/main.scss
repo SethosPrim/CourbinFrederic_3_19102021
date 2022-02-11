@@ -1,9 +1,11 @@
 @import "utiles/_color";
-@import "utiles/_variables";
+@import "utiles/_keyframes";
 @import "utiles/_mixins";
 @import "utiles/_maps";
 @import "animations/heart";
 @import "animations/clique";
+@import "animations/time-paru";
+@import "animations/loader";
 @import "base/base";
 @import "components/pink-button";
 @import "layouts/accueil-fonctionnement";

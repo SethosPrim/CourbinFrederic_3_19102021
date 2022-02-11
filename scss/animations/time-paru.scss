@@ -1,0 +1,36 @@
+.restaurant{
+    &--titre{
+        animation: paru 2s backwards;
+    }
+}
+
+.menu{
+    animation: paru 4s backwards;
+    &__clique-1{
+        animation: paru 6s backwards;
+    }
+    &__clique-2{
+        animation: paru 8s backwards;
+    }
+    &__clique-3{
+        animation: paru 10s backwards;
+    }
+    &__clique-4{
+        animation: paru 12s backwards;
+    }
+    &__clique-5{
+        animation: paru 14s backwards;
+    }
+    &__clique-6{
+        animation: paru 16s backwards;
+    }
+    &__clique-7{
+        animation: paru 18s backwards;
+    }
+    &__clique-8{
+        animation: paru 20s backwards;
+    }
+    &__clique-9{
+        animation: paru 22s backwards;
+    }
+}
