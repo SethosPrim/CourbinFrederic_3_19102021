@@ -9,10 +9,12 @@
         @include choice;
         &:hover{
             & .menu__clique--titre{
-                width: calc(100% - 60px);
                 &__infos{
+                    &--texte{
+                        width: calc(100% - 100px);
+                    }
                     &--prix{
-                        transform: translateX(-5px);
+                        transform: translateX(-60px);
                     }
                 }
             }
@@ -33,12 +35,13 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
-                    width: 85%;
+                    width: 100%;
                     transition: width 0.75s;
                 }
                 &--prix{
-                    @include span-price;
-                    transition: transform 1.5s 0.05s;
+                    font-weight: bold;
+                    transition: transform 1s 0.05s;
+                    transform: translate(0);
                 }
             }
         }
