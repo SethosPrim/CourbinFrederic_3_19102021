@@ -3,24 +3,23 @@
   to {opacity: 1;}
 }
 
-@keyframes loader-vis { 
+@keyframes loader-vis{ 
   0% {visibility: visible;}
   85% {opacity: 1;}
   100% {visibility: hidden; opacity: 0;}
 }
  
-@keyframes lumi-rotat {
+@keyframes loader-rot{
+  from {transform: rotate(1turn);}
+  to {transform: rotate(0turn);}
+}
+
+@keyframes loader-rot--2{
   from {transform: rotate(0turn);}
   to {transform: rotate(1turn);}
 }
-  
-// AUTRES
-@keyframes valid {
-  from {transform: rotate(-360deg);}
-  to {transform: rotate(0);}
-}
 
-@keyframes appar {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes loader-logo{
+  from {transform: scale(3);}
+  to {transform: scale(0);}
 }
