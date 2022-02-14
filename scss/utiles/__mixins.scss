@@ -1,4 +1,4 @@
-// definitions des médias
+// définitions des médias //
 
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
@@ -12,7 +12,7 @@
     }
 }
 
-// definitions d'autres
+// définitions d'autres //
 
 @mixin box-shadow-primary {
     box-shadow: 0 0.313em 0.313em $color-seven;

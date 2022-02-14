@@ -43,6 +43,14 @@
     transform: scale(0);
   }
 }
+@keyframes valid {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .like:hover {
   cursor: pointer;
 }
@@ -197,14 +205,6 @@
   }
 }
 
-@keyframes valid {
-  from {
-    transform: rotate(-360deg);
-  }
-  to {
-    transform: rotate(0);
-  }
-}
 .restaurant--titre {
   animation: paru 2s backwards;
 }

@@ -23,3 +23,8 @@
   from {transform: scale(3);}
   to {transform: scale(0);}
 }
+
+@keyframes valid{
+  from {transform: rotate(-360deg);}
+  to {transform: rotate(0);}
+}
