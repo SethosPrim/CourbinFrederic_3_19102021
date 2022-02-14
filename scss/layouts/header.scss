@@ -28,6 +28,9 @@
             width: 2em;
             margin-left: 7%;
             padding-right: 1%;
+            @include desktop{
+                margin-left: 4%;
+            }
         }
         &--ville{
             font-size: 1.25em;

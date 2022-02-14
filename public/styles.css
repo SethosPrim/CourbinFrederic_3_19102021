@@ -742,6 +742,11 @@ footer {
   margin-left: 7%;
   padding-right: 1%;
 }
+@media screen and (min-width: 1024px) {
+  .header__localisation--gps {
+    margin-left: 4%;
+  }
+}
 .header__localisation--ville {
   font-size: 1.25em;
   border: none;
