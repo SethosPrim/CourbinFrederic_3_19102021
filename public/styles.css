@@ -246,6 +246,8 @@
 .loader {
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background: linear-gradient(#ff79da12 0%, #9356DCab 100%);
   font-size: 1.9em;
@@ -254,113 +256,138 @@
   right: 0;
   top: 0;
   z-index: 10;
-  justify-content: center;
-  align-items: center;
   animation: loader-vis 6s forwards;
 }
 .loader__rot {
   position: relative;
+  background: white;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 130px;
   width: 130px;
-  background: white;
-  border-radius: 50%;
 }
 .loader__rot .loader-color {
   position: absolute;
-  height: 126px;
-  width: 126px;
   border-radius: 50%;
   top: 2px;
   left: 2px;
   opacity: 0;
+  height: 126px;
+  width: 126px;
 }
 .loader__rot .loader-color--1 {
-  background: #FF79DA;
   animation: paru 500ms forwards;
 }
 .loader__rot .loader-color--2 {
-  background: #99E2D0;
   animation: paru 500ms 0.5s forwards;
 }
 .loader__rot .loader-color--3 {
-  background: #9356DC;
   animation: paru 500ms 1s forwards;
 }
 .loader__rot .loader-color--4 {
   background: #ff79da12;
   background: linear-gradient(90deg, #FF79DA 25%, #99E2D0 50%, #9356DC 75%);
+}
+.loader__rot .loader-color--1 {
+  background: #FF79DA;
+}
+.loader__rot .loader-color--2 {
+  background: #99E2D0;
+}
+.loader__rot .loader-color--3 {
+  background: #9356DC;
+}
+.loader__rot .loader-color--4 {
   animation: paru 100ms 1.5s forwards, loader-rot 600ms 1.5s infinite;
 }
 .loader__rot--1 {
   position: relative;
+  background: white;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100px;
-  background: white;
-  border-radius: 50%;
 }
 .loader__rot--1 .loader-color {
   position: absolute;
-  height: 96px;
-  width: 96px;
   border-radius: 50%;
   top: 2px;
   left: 2px;
   opacity: 0;
+  height: 96px;
+  width: 96px;
 }
 .loader__rot--1 .loader-color--1 {
-  background: #9356DC;
   animation: paru 500ms forwards;
 }
 .loader__rot--1 .loader-color--2 {
-  background: #FF79DA;
   animation: paru 500ms 0.5s forwards;
 }
 .loader__rot--1 .loader-color--3 {
-  background: #99E2D0;
   animation: paru 500ms 1s forwards;
 }
 .loader__rot--1 .loader-color--4 {
   background: #ff79da12;
   background: linear-gradient(90deg, #FF79DA 25%, #99E2D0 50%, #9356DC 75%);
+}
+.loader__rot--1 .loader-color--1 {
+  background: #9356DC;
+}
+.loader__rot--1 .loader-color--2 {
+  background: #FF79DA;
+}
+.loader__rot--1 .loader-color--3 {
+  background: #99E2D0;
+}
+.loader__rot--1 .loader-color--4 {
   animation: paru 100ms 1.5s forwards, loader-rot--2 600ms 1.5s infinite;
 }
 .loader__rot--2 {
   position: relative;
-  height: 60px;
-  width: 60px;
   background: white;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
 }
 .loader__rot--2 .loader-color {
   position: absolute;
-  height: 56px;
-  width: 56px;
   border-radius: 50%;
   top: 2px;
   left: 2px;
   opacity: 0;
+  height: 56px;
+  width: 56px;
 }
 .loader__rot--2 .loader-color--1 {
-  background: #99E2D0;
   animation: paru 500ms forwards;
 }
 .loader__rot--2 .loader-color--2 {
-  background: #9356DC;
   animation: paru 500ms 0.5s forwards;
 }
 .loader__rot--2 .loader-color--3 {
-  background: #FF79DA;
   animation: paru 500ms 1s forwards;
 }
 .loader__rot--2 .loader-color--4 {
   background: #ff79da12;
   background: linear-gradient(90deg, #FF79DA 25%, #99E2D0 50%, #9356DC 75%);
+}
+.loader__rot--2 .loader-color--1 {
+  background: #99E2D0;
+}
+.loader__rot--2 .loader-color--2 {
+  background: #9356DC;
+}
+.loader__rot--2 .loader-color--3 {
+  background: #FF79DA;
+}
+.loader__rot--2 .loader-color--4 {
   animation: paru 100ms 1.5s forwards, loader-rot 600ms 1.5s infinite;
 }
 .loader__rot--2 .loader-color--4 .loader__logo img {

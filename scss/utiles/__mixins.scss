@@ -47,3 +47,37 @@
     top: 8px;
     left: 8px;
 }
+
+@mixin loader-color {
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+    &--1{
+        animation: paru 500ms forwards;
+    }
+    &--2{
+        animation: paru 500ms .5s forwards;
+    }
+    &--3{
+        animation: paru 500ms 1s forwards;
+    }
+    &--4{
+        background: $color-loader-primary;
+        background: $color-loader-rot;
+    }
+}
+
+@mixin position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rot {
+    position: relative;
+    background: $color-five;
+    border-radius: 50%;
+    @include position;
+}
