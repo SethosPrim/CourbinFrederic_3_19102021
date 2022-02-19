@@ -33,9 +33,6 @@
         @include tablet{
             margin-left: -1.25em;
         }
-        @include desktop{
-            margin-left: none;
-        }
     }
     &--off{
         position: absolute;
